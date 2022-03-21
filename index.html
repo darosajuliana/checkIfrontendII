@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkpoint I | Front-End II</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/lista.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <main>
+    <header>
+      <nav>
+        <img src="https://www.digitalhouse.com/br/blog/content/images/size/w600/2022/03/DigitalHouse_Logo_White--1-.png"
+          alt="Digital House" width="100">
+      </nav>
+      <h1>Mural dos sonhos</h1>
+      <h3><i>Coloque aqui seus sonhos a serem realizados</i></h3>
+      <marquee>
+        <p><i>Pode ser uma viagem, um carro, lugares onde sonha em trabalhar...</i></p>
+      </marquee>
+
+    </header>
+
+    <form onsubmit="criarartes(event)">
+
+      <input id="nome" type="text" name="nome" placeholder="Título" required />
+      <input id="desc" type="text" name="desc" placeholder="Descrição" required />
+      <input id="image" type="text" name="imagem" placeholder="URL da imagem" required />
+  
+      <button id="botao" type="submit">Enviar</button>
+
+
+    </form>
+
+    <h2>Lista dos sonhos</h2>
+    <div id="lista-sonho">
+      <div class="sonho">
+        <div class="imagem-container">
+          <img src="https://maladeaventuras.com/wp-content/uploads/2021/10/precos-fernando-de-noronha.jpg" />
+        </div>
+        <h3>Fernando de Noronha</h3>
+        <h4>Viajar para Fernando de Noronha e mergulhar com tanque de oxigênio </h4>
+        
+      </div>
+      
+    </div>
+    <h2 class="fim">Sonhar grande e sonhar pequeno dá o mesmo trabalho</h2>
+  </main>
+  
+  <footer>
+    <div>
+      <p>Esta página foi desenvolvida por:<br><br>
+        Juliana Rosa <a href=https://github.com/darosajuliana><img
+            src="./imagens/github.png" width="16" height="16"
+            class="media-object  img-responsive img-thumbnail"></a>
+        <br>
+        Jonathas Magalhães <a href=https://github.com/jonathasm><img
+            src="./imagens/github.png" width="16" height="16"
+            class="media-object  img-responsive img-thumbnail"></a><br>
+        Victor Leão <a href=https://github.com/leaovic><img
+            src="./imagens/github.png" width="16" height="16"
+            class="media-object  img-responsive img-thumbnail"></a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./JS/script.js"></script>
+  
+</body>
+
+</html>
