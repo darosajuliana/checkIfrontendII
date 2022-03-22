@@ -57,7 +57,7 @@ body {
 
 form {
   border-radius: 15px;
-  margin: 100px 100px 100px;
+  margin: 0 auto;
   padding: 30px;
   background: #743b12;
   display: grid;
